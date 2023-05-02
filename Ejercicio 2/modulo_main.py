@@ -24,7 +24,7 @@ def menu(listaViajeros, idviaj):
             listaViajeros[idviaj].canjearMillas(millascanjear)
             
         option = int(input("Opción > "))
-
+        
 if __name__ == "__main__":  
     
     listaViajeros = []
@@ -37,7 +37,6 @@ if __name__ == "__main__":
         print("Info de viajeros cargada con éxito.")
     
     idviaj = int(input("Ingrese numero de viajero > "))
-        
     menu(listaViajeros, idviaj)
     
     print("La lista pesa ",sys.getsizeof(listaViajeros), "bytes")
