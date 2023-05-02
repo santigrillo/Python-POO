@@ -2,29 +2,36 @@ from modulo_clase import ViajeroFrecuente
 import csv
 import sys
 
-def menu(listaViajeros, idviaj):
+def menu(listaViajeros, idviaj, option, sumamillas, millascanjear):
+    print("\n")
     print("Menú")
     print("1 - Consultar millas")
     print("2 - Acumular millas")
     print("3 - Canjear millas")
     print("-1 - Salir")
-    
-    option = int(input("Opción > "))
-    
+      
     while(option != -1):
         if(option == 1):
             listaViajeros[idviaj].cantidadTotalMillas()
         
         if(option == 2):
-            sumamillas = float(input("Ingrese millas a sumar > "))
+            # sumamillas = float(input("Ingrese millas a sumar > "))
             listaViajeros[idviaj].acumularMillas(sumamillas)
+            print("Millas cargadas.")
         
         if(option == 3):
-            millascanjear = float(input("Ingrese la cantidad de millas a canjear > "))
+            # millascanjear = float(input("Ingrese la cantidad de millas a canjear > "))
             listaViajeros[idviaj].canjearMillas(millascanjear)
-            
-        option = int(input("Opción > "))
         
+        option = -1 #Salida
+            
+def test():
+    menu(listaViajeros, 1, 1, 0, 0) #Consulta millas viajero 1.
+    menu(listaViajeros, 1, 2, 500, 0) #Suma 500 millas al viajero 1.
+    menu(listaViajeros, 1, 1, 0, 0) #Consulta millas viajero 1.
+    menu(listaViajeros, 1, 3, 0, 200) #Canjea millas viajero 1 y devuelve resto.
+    
+
 if __name__ == "__main__":  
     
     listaViajeros = []
@@ -36,13 +43,10 @@ if __name__ == "__main__":
             listaViajeros.append(viaj)
         print("Info de viajeros cargada con éxito.")
     
-    idviaj = int(input("Ingrese numero de viajero > "))
-    menu(listaViajeros, idviaj)
+    test()
+    print("\n")
     
     print("La lista pesa ",sys.getsizeof(listaViajeros), "bytes")
     
-    
-    
-       
     
     
