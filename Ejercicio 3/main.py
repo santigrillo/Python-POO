@@ -18,13 +18,13 @@ def menu(registros):
             lista_bidimensional[dia - 1][hora] = registro
         
 
-        print("Menú de opciones:")
-        print("1. Mostrar valores extremos")
-        print("2. Calcular promedio de temperatura por hora")
-        print("3. Listar valores de un día")
-        print("4. Salir")
+        print("Menú:")
+        print("1 - Mostrar valores extremos")
+        print("2 -Calcular promedio de temperatura por hora")
+        print("3 - Listar valores de un día")
+        print("-1 - Salir")
 
-        option = int(input("Ingrese el número de la opción deseada: "))
+        option = int(input("Ingrese opcion > "))
 
         while(option != -1):
             
