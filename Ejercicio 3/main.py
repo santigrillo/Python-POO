@@ -38,7 +38,7 @@ def menu(registros):
             else:
                 print("Opción invalida")
             
-            option = int(input("Ingrese el número de la opción deseada: "))
+            option = int(input("Ingrese opcion > "))
 
 if __name__ == "__main__":
     registros = []
