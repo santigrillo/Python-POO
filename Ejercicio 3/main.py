@@ -36,7 +36,7 @@ def menu(registros):
                 dia = int(input("Ingrese el número de día: "))
                 listar_valores_dia(dia, lista_bidimensional)
             else:
-                print("Opción no válida, por favor intente nuevamente.")
+                print("Opción invalida")
             
             option = int(input("Ingrese el número de la opción deseada: "))
 
