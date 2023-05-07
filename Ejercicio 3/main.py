@@ -7,7 +7,7 @@ import csv
 
 def menu(registros):
     
-        with open("registro.csv", "r") as archivo:
+        with open("Ejercicio 3/registro.csv", "r") as archivo:
             for linea in archivo:
                 dia, hora, temperatura, humedad, presion = linea.strip().split(",")
                 registros.append(((int(dia), int(hora)), registro(float(temperatura), float(humedad), float(presion))))
