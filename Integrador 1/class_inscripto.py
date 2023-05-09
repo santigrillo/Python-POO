@@ -17,7 +17,7 @@ class inscripto:
         self.__factorRiesgo = factorRiesgo
     
     def getInfo(self):
-        return(self.__apellido, self.__nombre, self.__edad, self.__factorRiesgo, self.getPriority())
+        return(self.__apellido, self.__nombre, self.__edad, self.__factorRiesgo, "Prioridad =", self.getPriority())
     
     def getEdad(self):
         return(self.__edad)

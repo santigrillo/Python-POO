@@ -7,7 +7,6 @@ def menu():
     lugares = []
     ManejadorL.carga(lugares)
     
-    
     print("\n")
     
     inscriptos = []
