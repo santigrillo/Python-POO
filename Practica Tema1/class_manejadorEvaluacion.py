@@ -28,3 +28,12 @@ class ManejadorEvaluaciones:
                 dni = evaluaciones[i].getDNI()
                 xid = manejadorFederados.getAlumno(federados, dni)
                 print(federados[xid].getInfo2(), " hizo estilo libre.")
+                
+    def option4(evaluaciones):
+        dni = input("Ingrese DNI > ")
+        estilo = input("Ingrese estilo > ")
+        
+        for i in range(len(evaluaciones)):
+            if(evaluaciones[i].getDNI() == dni) and (evaluaciones[i].getEstilo()==estilo):
+                evaluaciones[i].getNota()
+                

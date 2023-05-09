@@ -22,3 +22,7 @@ class evaluacion:
     def getPromedio(self):
         notas = (self.__nota1 + self.__nota2 + self.__nota3) 
         return notas / 3
+    
+    def getNota(self):
+        print("Nota 1 ", self.__nota1, "\nNota 2", self.__nota2, "\nNota 3", self.__nota3)
+        
