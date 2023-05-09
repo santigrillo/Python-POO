@@ -17,6 +17,9 @@ def menu():
     #Modulo 2 =  Mostrar apellido y nombre del patinador, estilo y club al que representa del patinador con mayor puntaje (promedio)
     manejadorFederados.option2(evaluaciones, federados)
     
+    #Modulo 3 = Listar la información de los patinadores que hicieron estilo libre.
+    ManejadorEvaluaciones.option3(evaluaciones, federados)
+    
     
 if __name__ == "__main__":
     menu()

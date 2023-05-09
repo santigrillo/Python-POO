@@ -22,3 +22,9 @@ class ManejadorEvaluaciones:
                 if federados[xid].getEdad() == edad:
                     federados[xid].getInfo()
         
+    def option3(evaluaciones, federados):
+        for i in range(len(evaluaciones)):
+            if(evaluaciones[i].getEstilo() == 'L'):
+                dni = evaluaciones[i].getDNI()
+                xid = manejadorFederados.getAlumno(federados, dni)
+                print(federados[xid].getInfo2(), " hizo estilo libre.")
