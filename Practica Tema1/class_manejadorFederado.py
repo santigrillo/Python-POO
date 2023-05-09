@@ -21,3 +21,9 @@ class manejadorFederados:
             else:
                 i+=1
         return valorRetorno
+    
+    def option2(evaluaciones, federados):
+        evaluaciones.sort(key=lambda i: i.getPromedio(), reverse=True)
+        dni = evaluaciones[0].getDNI()
+        idAl = manejadorFederados.getAlumno(federados, dni)
+        print("El alumno con mayor promedio es ", federados[idAl].getInfo2(), " con ", evaluaciones[0].getPromedio())

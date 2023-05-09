@@ -20,3 +20,6 @@ class federado:
     
     def getEdad(self):
         return(self.__edad)
+    
+    def getInfo2(self):
+        return(self.__nombre, self.__apellido)

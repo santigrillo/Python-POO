@@ -10,7 +10,6 @@ class ManejadorEvaluaciones:
                 file = file.split(';')
                 ev = evaluacion(file[0], file[1], float(file[2]), float(file[3]), float(file[4]))
                 evaluaciones.append(ev)
-                
     
     def option1(evaluaciones, federados):
         estilo = input("Ingrese estilo > ")
