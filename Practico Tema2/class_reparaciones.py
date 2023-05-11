@@ -16,3 +16,20 @@ class reparacion:
         
     def getInfo(self):
         print(self.__patente, self.__reparacion)
+        
+        
+    def getPatente(self):
+        return(self.__patente)
+
+        
+    def getReparacion(self):
+        return(self.__reparacion)
+    
+    def getPrecioRp(self):
+        return(self.__precioRepuesto)
+    
+    def getPrecioMo(self):
+        return(self.__precioManoDeObra)
+    
+    def getTotal(self):
+        return(self.__precioManoDeObra + self.__precioRepuesto)
