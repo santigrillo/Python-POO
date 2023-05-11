@@ -27,3 +27,10 @@ class cliente:
     
     def getVehiculo(self):
         print(self.__vehiculo, self.__patente)
+     
+    def modificarEstado(self):
+        self.__estado = 'T'
+
+    def getEstado(self):
+        return (self.__estado)   
+    

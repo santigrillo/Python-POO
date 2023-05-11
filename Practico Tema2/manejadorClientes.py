@@ -33,12 +33,15 @@ class manejadorClientes:
              band = True
             else:
                 i+=1
-        return i    
+        return i  
+    
+            
             
     def modulo1(clientes, reparaciones):
         dni = "21111223" #input("Ingrese DNI > ")
         patente = manejadorClientes.getPatente(clientes, dni)
         cID = manejadorClientes.getClienteByDNI(clientes, dni)
+        print("\n")
         clientes[cID].getInfo()
         clientes[cID].getVehiculo()
         manejadorReparacion.getReparacionesByPatente(reparaciones, patente)

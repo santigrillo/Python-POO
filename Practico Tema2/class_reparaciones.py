@@ -4,7 +4,7 @@ class reparacion:
     __repuesto = ""
     __precioRepuesto = ""
     __precioManoDeObra = ""
-    __estado = ""
+    __estado = ''
     
     def __init__(self, pat, rep, repuesto, pR, pMO, est):
         self.__patente = pat
@@ -21,7 +21,6 @@ class reparacion:
     def getPatente(self):
         return(self.__patente)
 
-        
     def getReparacion(self):
         return(self.__reparacion)
     
@@ -33,3 +32,6 @@ class reparacion:
     
     def getTotal(self):
         return(self.__precioManoDeObra + self.__precioRepuesto)
+    
+    def getEstado(self):
+        return(self.__estado)
