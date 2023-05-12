@@ -17,7 +17,7 @@ class cliente:
         self.__estado = est
         
     def getInfo(self):
-        print(self.__apellido, self.__nombre,'>', self.__dni)
+        print("Nombre y apellido = ", self.__nombre, self.__apellido, " Telefono ", self.__telefono, "\nPatente ", self.__patente, "Vehiculo ", self.__vehiculo)
         
     def getDNI(self):
         return(self.__dni)

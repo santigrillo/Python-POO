@@ -58,3 +58,24 @@ class manejadorReparacion:
         manejadorReparacion.modificarEstadoByPatente(clientes, patente)
         print("Patente ", patente)
         manejadorReparacion.getReparacionesByPatente(reparaciones, patente)
+        
+        
+    def getinfobypatente(clientes, pat):
+        band = False
+        i = 0
+        
+        while i< len(clientes) and band == False:
+            if(clientes[i].getPatente() == pat):
+                clientes[i].getInfo()
+                band = True
+            else:
+                i += 1
+            
+        
+    def modulo3(reparaciones, clientes):
+        for i in range(len(reparaciones)):
+            if reparaciones[i].getEstado() == 'P':
+                pat = reparaciones[i].getPatente()
+                manejadorReparacion.getinfobypatente(clientes, pat)
+                print(reparaciones[i].getReparacion())
+                print("\n")
