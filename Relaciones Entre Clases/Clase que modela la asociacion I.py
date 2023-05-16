@@ -83,7 +83,7 @@ def testClaseModelaAsociacion():
     
     prescripcion = Prescripcion('11/01/2020', 'Rinitis', 'Hexaler','10 comprimidos', '1 por día',med, pac)
     prescripcion2 = Prescripcion('29/01/2020', 'Otitis', 'Ciriax Gotas', 'envase 10 ml', '2 gotas cada 8h',med, pac1)
-    prescripcion3 = Prescripcion('29/01/2022', 'Covid', 'Tafirol', 'Comprimido', '1 por dia',med, pac)
+    prescripcion3 = Prescripcion('29/01/2022', 'Covid', 'Tafirol', 'Comprimido', '1 por dia',med, pac) 
     
     pac1.muestraPrescripciones()
     med.muestraPrescripciones()
