@@ -96,9 +96,6 @@ def test():
     print("Opcion 3 - Agregar plato.")
     print("Opcion 4 - Cerrar pedido.")
     
-    
-
-    
     option = int(input("Ingrese opcion > "))
     while option != -1:
         if option == 1:
@@ -128,7 +125,5 @@ def test():
             
         option = int(input("Ingrese opcion > "))
         
-            
-            
 if __name__ == "__main__":
     test()
