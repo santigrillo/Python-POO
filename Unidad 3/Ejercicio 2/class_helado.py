@@ -1,10 +1,10 @@
 class helado:
     __gramos = float
     __precio = float
-    __sabores = []
     
     def __init__ (self, gramos):
         self.__gramos = gramos
+        self.__sabores = []
     
     def addSabor(self, sabor):
         self.__sabores.append(sabor)
