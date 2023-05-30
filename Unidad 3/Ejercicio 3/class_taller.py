@@ -37,3 +37,6 @@ class taller:
             tieneAlumnos = True
         if not tieneAlumnos:
             print("El taller que eligió no tiene alumnos inscriptos.")
+            
+    def getID(self):
+        return self.__idTaller

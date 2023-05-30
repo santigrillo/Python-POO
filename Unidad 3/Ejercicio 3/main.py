@@ -9,6 +9,7 @@ def menu():
     print("3 - Muestra inscripciones por persona.")
     print("4 - Muestra inscriptos por taller.")
     print("5 - Registrar pago.")
+    print("6 - Generar archivo.")
 
 def test():
     mT = manejadorTalleres()
@@ -40,6 +41,10 @@ def test():
         if option == 5:
             print("\n")
             mI.registrarPago()
+
+        if option == 6:
+            mI.generarArchivo()
+
             
         print("\n")
         menu()

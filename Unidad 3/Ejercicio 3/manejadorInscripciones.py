@@ -1,4 +1,5 @@
 from class_inscripcion import inscripcion
+import csv
 
 class manejadorInscripciones:
     
@@ -62,3 +63,12 @@ class manejadorInscripciones:
             self.__inscripciones[xID].pagar()
         if not debecurso:
             print("El alumno no debe cursos.")    
+            
+    def generarArchivo(self):
+        with open("Unidad 3/Ejercicio 3/archivogenerado.csv", 'a', newline='') as NewFile:
+            newline = csv.writer(NewFile, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
+            for inscripcion in self.__inscripciones:
+                line = (inscripcion.getDniInscripto(), inscripcion.getIDTaller(), inscripcion.getFecha(), inscripcion.getEstado2())
+                newline.writerow(line)
+                
+                            

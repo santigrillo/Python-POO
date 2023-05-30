@@ -31,3 +31,15 @@ class inscripcion:
     def pagar(self):
         self.__pago = True
         print("Pago realizado con éxito.")
+        
+    def getIDTaller(self):
+        return self.__taller.getID()
+    
+    def getFecha(self):
+        return self.__fechaInscripcion
+
+    def getEstado2(self):
+        if self.__pago:
+            return("Pagado.")
+        if not self.__pago:
+            return("Adeuda.")
