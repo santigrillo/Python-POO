@@ -5,7 +5,7 @@ import csv
 class ManejadorEvaluaciones:
     
     def carga(evaluaciones):
-        with open ("Practica Tema1/archivos/evaluacion.csv", 'r') as ArchivoEvaluaciones:
+        with open ("Unidad 2/Practica Tema1/archivos/evaluacion.csv", 'r') as ArchivoEvaluaciones:
             for file in ArchivoEvaluaciones:
                 file = file.split(';')
                 ev = evaluacion(file[0], file[1], float(file[2]), float(file[3]), float(file[4]))

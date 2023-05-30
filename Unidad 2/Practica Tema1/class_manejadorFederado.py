@@ -4,7 +4,7 @@ import csv
 class manejadorFederados:
     
     def carga(federados):
-        with open ("Practica Tema1/archivos/federados.csv", 'r') as ArchivoFederados:
+        with open ("Unidad 2/Practica Tema1/archivos/federados.csv", 'r') as ArchivoFederados:
             for file in ArchivoFederados:
                 file = file.split(';')
                 fed = federado(file[0], file[1], file[2], int(file[3]), file[4])
