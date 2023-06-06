@@ -1,0 +1,4 @@
+dni;nombre;telefono;tarea_realizada;fecha_inicio_tarea;fecha_fin_tarea;monto_viatico;costo_obra;monto_seguro_vida;estado
+40501120;Laura Garcia;2647408090;Instalacion de redes;2022-01-01;2022-01-10;100;5000;50;terminado
+40501650;Manuel Ugarte;2647408010;Reparacion de equipos;2021-06-15;2021-06-20;50;2000;25;terminado
+40501809;Ana Ponzio;2647408056;Desarrollo de software;2023-03-01;2023-04-30;200;10000;100;pendiente
